@@ -5,7 +5,7 @@ const createApolloGraphqlServer = async () => {
   const graphqlServer = new ApolloServer({
     typeDefs: `
       type Query {
-        hello: String
+        ${User.queries}
       }
 
       type Mutation {
